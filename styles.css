@@ -1,0 +1,102 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Style for div.question */
+div.question {
+    background-color: #e6f7ff;
+    border: 2px solid #82cfff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #005073;
+}
+
+/* Style for div.answer */
+div.answer {
+    background-color: #fff4e6;
+    border: 2px solid #ffcc99;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #704214;
+}
+
+/* General style for p tags */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Style for li tags */
+li {
+    font-size: 15px;
+    line-height: 1.6;
+    list-style-type: disc;
+    margin-left: 25px;
+    color: #555;
+}
+
+/* Improved style for nested p in li */
+li p {
+    margin: 10px 0 10px 0;
+    text-indent: 0;
+    color: #444;
+}
+
+/* Style for span tags */
+span {
+    font-size: 15px;
+    color: #d2691e;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Add some hover effect for interactive elements (optional) */
+div.question:hover, div.answer:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Improve accessibility with focus outlines */
+div.question:focus, div.answer:focus {
+    outline: 3px solid #ffa500;
+    outline-offset: 2px;
+}
+
+/* Improve responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    div.question, div.answer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    li {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}
