@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Club Events</title>
+<link rel="stylesheet" href="events.css">
+</head>
+<body>
+  <div class="min-h-screen">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1>Technical Club Events</h1>
+        <p>Join us in our exciting technical events and enhance your skills through hands-on experience</p>
+      </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="container2">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="upcoming">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Upcoming Events
+        </button>
+        <button class="tab-btn" data-tab="completed">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Completed Events
+        </button>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="events-grid" id="eventsGrid"></div>
+    </div>
+  </div>
+
+  <script src="events.js"></script>
+</body>
+</html>
